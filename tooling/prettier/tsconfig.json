@@ -1,0 +1,12 @@
+{
+  "extends": "@mono/tsconfig/base.json",
+  "compileroptions": {
+    "tsbuildinfofile": "node_modules/.cache/tsbuildinfo.json"
+  },
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

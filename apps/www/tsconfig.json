@@ -1,0 +1,28 @@
+{
+  "extends": "@mono/tsconfig/base.json",
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "module": "esnext",
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+  },
+  "include": [".", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "build", "dist", ".next", ".expo"]
+}
